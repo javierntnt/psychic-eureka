@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api.coingecko</title>
+    <link rel="stylesheet" href="/Coin/Cryto/cryto.css">
+</head>
+<body>
+    <main id="app">
+        <!-- Menú de navegación -->
+        <aside class="c-nav">
+            <button class="c-nav-item" onclick="General()"> Lista</button>
+            <button class="c-nav-item" onclick="mostrarusuario()"> Usuario</button>
+            <button class="c-nav-item" onclick="mostrarAleatorios()">Aleatorios </button>
+            <button class="c-nav-item" onclick="mostrarFavoritos()"> Favoritos</button>
+            <button class="c-nav-item" onclick="mostrargrafica()">Graficos</button>
+        </aside>
+        <!-- Contenido dinámico -->
+        <section id="contenido-dinamico"></section>
+    </main>
+</body>
+<script src="/Coin/Cryto/js/aleatorio.js"></script>
+<script src="/Coin/Cryto/js/api.js"></script>
+<script src="/Coin/Cryto/js/grafica.js"></script>
+<script src="/Coin/Cryto/js/detalle.js"></script>
+<script src="/Coin/Cryto/js/favoritos.js"></script>
+<script src="/Coin/Cryto/js/lista.js"></script>
+<script src="/Coin/Cryto/js/usuario.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded",General)
+</script>
+
