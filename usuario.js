@@ -8,7 +8,7 @@ function mostrarusuario() {
     document.body.style.flexDirection = "column"; // Alinear elementos en columna
     document.body.style.justifyContent = "center"; // Centrar verticalmente
     document.body.style.alignItems = "center"; // Centrar horizontalmente
-    document.body.style.backgroundImage = "url('../Cryto//Fondo.png')"; // Ruta corregida
+    document.body.style.backgroundImage = "url('Fondo.png')"; // Ruta corregida
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundRepeat = "no-repeat";
@@ -19,12 +19,12 @@ function mostrarusuario() {
         
         <p style="text-align: center;">La API de Coingecko proporciona acceso a datos en tiempo real sobre criptomonedas, incluyendo precios, volumen de comercio, pares de comercio, metadatos y datos históricos. La API está integrada con más de 1,000 exchanges de criptomonedas y ofrece más de 70 puntos de conexión.</p> <!-- Descripción centrada -->
 
-        <img src="../Cryto/LogoApi.png" alt="Imagen temática de coingecko" style="width: 200px; height: auto; display: block; margin: 20px auto;"> <!-- Logo centrado -->
+        <img src="LogoApi.png" alt="Imagen temática de coingecko" style="width: 200px; height: auto; display: block; margin: 20px auto;"> <!-- Logo centrado -->
 
         <p style="text-align: center; margin-top: 20px;">Usuario de GitHub: Javierntnt. <br> Versión de la app: V.1.0.0</p> <!-- Usuario y versión centrados -->
 
         <h1 style="text-align: center;">Javier Alejandro Dueñas Torres</h1> <!-- Nombre centrado -->
 
-        <button onclick="window.location.href='../index.html'" style="margin-top: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #007BFF; color: white; border: none; border-radius: 5px;">Volver al inicio</button> <!-- Botón para volver al inicio -->
+        <button onclick="window.location.href='index.html'" style="margin-top: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: #007BFF; color: white; border: none; border-radius: 5px;">Volver al inicio</button> <!-- Botón para volver al inicio -->
     `;
 }
