@@ -62,6 +62,9 @@ function mostrarDetalle(id) {
 
             // Actualizar el icono de favorito
             actualizarIconoFavorito(id);
+
+            // Llamar a la función para agregar el botón "Volver al inicio"
+            volverAlInicio();
         })
         .catch(error => {
             console.error("Error al obtener los detalles de la criptomoneda:", error);
@@ -71,5 +74,21 @@ function mostrarDetalle(id) {
 
 // Función para volver al inicio
 function volverAlInicio() {
-    location.reload(); // Recargar la página para volver al estado inicial
+    const botonVolver = document.createElement("button");
+    botonVolver.textContent = "Volver al inicio";
+    botonVolver.style.marginTop = "20px";
+    botonVolver.style.padding = "10px 20px";
+    botonVolver.style.fontSize = "16px";
+    botonVolver.style.cursor = "pointer";
+    botonVolver.style.backgroundColor = "#007BFF";
+    botonVolver.style.color = "white";
+    botonVolver.style.border = "none";
+    botonVolver.style.borderRadius = "5px";
+    botonVolver.addEventListener("click", () => {
+        window.location.href = "../index.html"; // Redirigir al archivo index.html
+    });
+
+    // Agregar el botón al final del contenedor principal
+    const app = document.getElementById("app");
+    app.appendChild(botonVolver);
 }

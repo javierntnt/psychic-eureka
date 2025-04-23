@@ -41,6 +41,23 @@ function mostrarAleatorios() {
 
             criptosAleatorias += "</section>";
             app.innerHTML = criptosAleatorias;
+
+            // Agregar el botón "Volver al inicio"
+            const botonVolver = document.createElement("button");
+            botonVolver.textContent = "Volver al inicio";
+            botonVolver.style.marginTop = "20px";
+            botonVolver.style.padding = "10px 20px";
+            botonVolver.style.fontSize = "16px";
+            botonVolver.style.cursor = "pointer";
+            botonVolver.style.backgroundColor = "#007BFF";
+            botonVolver.style.color = "white";
+            botonVolver.style.border = "none";
+            botonVolver.style.borderRadius = "5px";
+            botonVolver.addEventListener("click", () => {
+                window.location.href = "../index.html"; // Redirigir al archivo index.html
+            });
+
+            app.appendChild(botonVolver); // Agregar el botón al final del contenido
         })
         .catch(error => {
             console.error("Error al obtener las criptomonedas:", error);
