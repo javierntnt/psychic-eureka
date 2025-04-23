@@ -55,7 +55,7 @@ function mostrargrafica() {
     botonVolver.style.border = "none";
     botonVolver.style.borderRadius = "5px";
     botonVolver.addEventListener("click", () => {
-        window.location.href = "../index.html"; // Redirigir al archivo index.html
+        window.location.href = "index.html"; // Redirigir al archivo index.html
     });
 
     app.appendChild(botonVolver); // Agregar el botón al final del contenido
