@@ -1,0 +1,21 @@
+{
+    "name": "Coingeckoapp",
+    "short_name": "CoingeckoApp",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#BE3D2A",
+    "theme_color": "#e00000",
+    "icons": [
+      {
+        "src": "icons/iconocoingeck.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
