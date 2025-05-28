@@ -1,47 +1,128 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-button{
+body {
+    background: #f8fafc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
     background-color: transparent;
     border: unset;
     cursor: pointer;
     margin: 0;
     transition: 0.5s;
+    font-size: 1rem;
 }
+
 /* lista */
-.c-lista{
+.c-lista {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-.c-lista-cripto{
+.c-lista-pokemon {
     background-color: aliceblue;
     width: calc(50% - 5px);
     padding: 10px;
     text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px #0001;
 }
 
-/* navegacion */
-.c-nav{
+/* navegación */
+.c-nav {
     position: fixed;
     bottom: 0;
     left: 0;
-    background: silver;
+    background: #ccc;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px 15px;
+    padding: 10px 0 10px 0;
     gap: 10px;
+    z-index: 1001;
+    border-top: 2px solid #aaa;
 }
 
-.c-nav-item{
-    width: calc(25% - 7.5px);
-    background-color: red;
+.c-nav-item {
+    flex: 1 1 20%;
+    margin: 0 5px;
+    background-color: #e53935;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 0;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
 }
-.c-nav-item:hover{
+.c-nav-item:hover {
     color: yellow;
+    background: #b71c1c;
 }
+
+/* Botón de instalar PWA */
+#btn-instalar {
+    background: #43a047;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0002;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 80px; /* para que no tape la barra de navegación */
+    right: 20px;
+    z-index: 2000;
+    transition: background 0.3s;
+}
+#btn-instalar:hover {
+    background: #2e7031;
+}
+
+/* Contenido dinámico */
+#contenido-dinamico {
+    padding-bottom: 80px; /* espacio para la barra de navegación */
+    min-height: 80vh;
+}
+
+/* mios */
+.c-unpoke {
+    background-color: #171717;
+    width: calc(25% - 7.5px);
+    height: 85px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.c-unpoke img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/* Mensaje iOS */
+.mensaje-ios {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px;
+    text-align: center;
+}
+
+
